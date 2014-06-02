@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+		"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+		
+<hibernate-mapping>
+	<class name="Logic.Copy" table="copies" lazy="false">
+		<id name="id" column="copy_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="count" column="count" type="int" />
+		<property name="countAvailable" column="count_available" type="int" />
+		<property name="rentCost" column="rent_cost" type="int" />
+		<many-to-one name="copyType" class="Logic.CopyType" column="copy_type" lazy="false"/>
+	    <many-to-one name="movie" class="Logic.Movie" column="film_id" lazy="false" />
+	<property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+	<class name="Logic.CopyType" table="copy_type" lazy="false">
+		<id name="id" column="type_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="typeName" column="type_name" type="string" />
+	  <property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+	<class name="Logic.OrderHistory" table="order_history" lazy="false">
+		<id name="id" column="history_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="orderTime" column="order_time" type="date" />
+		<property name="returnTime" column="return_time" type="date" />
+		<property name="payout" column="payout" type="int" />
+		<many-to-one name="copy" class="Logic.Copy" column="copy_id" lazy="false" />
+	    <many-to-one name="client" class="Logic.Client" column="client_id" lazy="false" />  
+	    <many-to-one name="movie" class="Logic.Movie" column="movie_id" lazy="false" />  
+	    <property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+	<class name="Logic.Client" table="clients" lazy="false">
+		<id name="id" column="client_id" type="int">
+			<generator class="identity" />
+		</id>
+		<set name="historyRecords" lazy="false">
+			<key column="client_id" />
+			<one-to-many class="Logic.OrderHistory" />
+		</set>
+		<property name="name" column="name" type="string" />
+	    <property name="email" column="email" type="string" />
+	    <property name="adress" column="adress" type="string" />
+	    <property name="isRemoved" column="isRemoved" type="boolean"/>
+	    
+	</class>
+	
+	<class name="Logic.Movie" table="movies" lazy="false">
+		<id name="id" column="movie_id" type="int">
+			<generator class="identity" />
+		</id>
+		<set name="historyFilms" lazy="false">
+			<key column="movie_id" />
+			<one-to-many class="Logic.OrderHistory" />
+		</set>
+		<many-to-one name="company" column="company_id" class="Logic.Company" lazy="false" />
+		<many-to-one name="director" column="director_id" class="Logic.Director" lazy="false" />
+		<property name="title" column="title" type="string" />
+		<property name="year" column="year" type="int" />
+		<property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+	
+	<class name="Logic.Director" table="directors" lazy="false">
+		<id name="id" column="director_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="directorName" column="director_name" type="string" />
+        <property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+	<class name="Logic.Company" table="companies" lazy="false">
+		<id name="id" column="company_id" type="int">
+			<generator class="identity" />
+		</id>
+		<property name="companyName" column="company_name" type="string" />
+		<property name="isRemoved" column="isRemoved" type="boolean"/>
+	</class>
+	
+</hibernate-mapping>

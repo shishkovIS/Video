@@ -1,0 +1,22 @@
+<project name="Vid_db" default="select">
+<target name="create">
+<sql driver="com.mysql.jdbc.Driver" url="${db.url}" userid="${db.user}" password="${db.password}">
+<transaction src="${db.dir}/create.sql"/>
+</sql>
+</target>
+<target name="drop">
+<sql driver="com.mysql.jdbc.Driver" url="${db.url}" userid="${db.user}" password="${db.password}">
+<transaction src="${db.dir}/drop.sql"/>
+</sql>
+</target>
+<target name="insert">
+<sql driver="com.mysql.jdbc.Driver" url="${db.url}" userid="${db.user}" password="${db.password}">
+<transaction src="${db.dir}/insert.sql"/>
+</sql>
+</target>
+<target name="show">
+<sql driver="com.mysql.jdbc.Driver" url="${db.url}" userid="${db.user}" password="${db.password}">
+<transaction src="${db.dir}/show.sql"/>
+</sql>
+</target>
+</project>

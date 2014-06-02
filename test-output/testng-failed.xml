@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Test.OrderHistoryDAOTest">
+        <methods>
+          <include name="removeOrderHisoryTest"/>
+          <include name="getAllOrderHistoryTest"/>
+          <include name="addOrderHistoryTest"/>
+          <include name="getOrderHistoryClientTest"/>
+          <include name="updateOrderHistoryTest"/>
+          <include name="getOrderHistoryMovieTest"/>
+          <include name="getOrderHistoryByIdTest"/>
+        </methods>
+      </class> <!-- Test.OrderHistoryDAOTest -->
+      <class name="Test.DirectorDAOTest">
+        <methods>
+          <include name="addDirectorTest"/>
+          <include name="getDirectorByIdTest"/>
+          <include name="getAllDirectorsTest"/>
+          <include name="removeDirectorTest"/>
+          <include name="updateDirectorTest"/>
+        </methods>
+      </class> <!-- Test.DirectorDAOTest -->
+      <class name="Test.CompanyDAOTest">
+        <methods>
+          <include name="getAllCompaniesTest"/>
+          <include name="removeCompanyTest"/>
+          <include name="addClientTest"/>
+          <include name="getCompanyByIdTest"/>
+          <include name="updateCompanyTest"/>
+        </methods>
+      </class> <!-- Test.CompanyDAOTest -->
+      <class name="Test.CopyDAOTest">
+        <methods>
+          <include name="getCopyByMovieTest"/>
+          <include name="updateCopyTest"/>
+          <include name="getAllCopiesTest"/>
+        </methods>
+      </class> <!-- Test.CopyDAOTest -->
+      <class name="Test.MovieDAOTest">
+        <methods>
+          <include name="getMoviesByFilterDirectorTest"/>
+          <include name="getMoviesByFilterNameTest"/>
+          <include name="addMovieTest"/>
+          <include name="getMoviesByFilterCompanyTest"/>
+          <include name="getMoviesByFilterClientTest"/>
+          <include name="getAllMoviesTest"/>
+          <include name="removeMovieTest"/>
+          <include name="getMoviesByFilterYearTest"/>
+          <include name="updateMovieTest"/>
+          <include name="getMovieByIdTest"/>
+        </methods>
+      </class> <!-- Test.MovieDAOTest -->
+      <class name="Test.ClientDAOTest">
+        <methods>
+          <include name="getClientsByFilterNameTest"/>
+          <include name="addClientTest"/>
+          <include name="removeClientTest"/>
+          <include name="getClientByIdTest"/>
+          <include name="getAllClientsTest"/>
+          <include name="updateClientTest"/>
+          <include name="getClientsByFilterTest"/>
+        </methods>
+      </class> <!-- Test.ClientDAOTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

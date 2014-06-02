@@ -1,0 +1,7 @@
+ul.navigation li {
+display:inline;
+}
+
+ul.clients li {
+display:table-row;
+}

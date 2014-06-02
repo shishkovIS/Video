@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 21 13:03:27 MSK 2014</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1860 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test.CompanyDAOTest.addClientTest()'><b>addClientTest</b><br>Test class: Test.CompanyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CompanyDAOTest@5f7777ae</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.addClientTest()'><b>addClientTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.DirectorDAOTest.addDirectorTest()'><b>addDirectorTest</b><br>Test class: Test.DirectorDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.DirectorDAOTest@3462b48a</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.addMovieTest()'><b>addMovieTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.addOrderHistoryTest()'><b>addOrderHistoryTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.getAllClientsTest()'><b>getAllClientsTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.CompanyDAOTest.getAllCompaniesTest()'><b>getAllCompaniesTest</b><br>Test class: Test.CompanyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CompanyDAOTest@5f7777ae</td></tr>
+<tr>
+<td title='Test.CopyDAOTest.getAllCopiesTest()'><b>getAllCopiesTest</b><br>Test class: Test.CopyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CopyDAOTest@7904f4c8</td></tr>
+<tr>
+<td title='Test.DirectorDAOTest.getAllDirectorsTest()'><b>getAllDirectorsTest</b><br>Test class: Test.DirectorDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.DirectorDAOTest@3462b48a</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getAllMoviesTest()'><b>getAllMoviesTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.getAllOrderHistoryTest()'><b>getAllOrderHistoryTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.getClientByIdTest()'><b>getClientByIdTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.getClientsByFilterNameTest()'><b>getClientsByFilterNameTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.getClientsByFilterTest()'><b>getClientsByFilterTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.CompanyDAOTest.getCompanyByIdTest()'><b>getCompanyByIdTest</b><br>Test class: Test.CompanyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CompanyDAOTest@5f7777ae</td></tr>
+<tr>
+<td title='Test.CopyDAOTest.getCopyByMovieTest()'><b>getCopyByMovieTest</b><br>Test class: Test.CopyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CopyDAOTest@7904f4c8</td></tr>
+<tr>
+<td title='Test.DirectorDAOTest.getDirectorByIdTest()'><b>getDirectorByIdTest</b><br>Test class: Test.DirectorDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.DirectorDAOTest@3462b48a</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMovieByIdTest()'><b>getMovieByIdTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMoviesByFilterClientTest()'><b>getMoviesByFilterClientTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMoviesByFilterCompanyTest()'><b>getMoviesByFilterCompanyTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMoviesByFilterDirectorTest()'><b>getMoviesByFilterDirectorTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMoviesByFilterNameTest()'><b>getMoviesByFilterNameTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.getMoviesByFilterYearTest()'><b>getMoviesByFilterYearTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.getOrderHistoryByIdTest()'><b>getOrderHistoryByIdTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.getOrderHistoryClientTest()'><b>getOrderHistoryClientTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.getOrderHistoryMovieTest()'><b>getOrderHistoryMovieTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.removeClientTest()'><b>removeClientTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.CompanyDAOTest.removeCompanyTest()'><b>removeCompanyTest</b><br>Test class: Test.CompanyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CompanyDAOTest@5f7777ae</td></tr>
+<tr>
+<td title='Test.DirectorDAOTest.removeDirectorTest()'><b>removeDirectorTest</b><br>Test class: Test.DirectorDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.DirectorDAOTest@3462b48a</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.removeMovieTest()'><b>removeMovieTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.removeOrderHisoryTest()'><b>removeOrderHisoryTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+<tr>
+<td title='Test.ClientDAOTest.updateClientTest()'><b>updateClientTest</b><br>Test class: Test.ClientDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.ClientDAOTest@7b16b52c</td></tr>
+<tr>
+<td title='Test.CompanyDAOTest.updateCompanyTest()'><b>updateCompanyTest</b><br>Test class: Test.CompanyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CompanyDAOTest@5f7777ae</td></tr>
+<tr>
+<td title='Test.CopyDAOTest.updateCopyTest()'><b>updateCopyTest</b><br>Test class: Test.CopyDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.CopyDAOTest@7904f4c8</td></tr>
+<tr>
+<td title='Test.DirectorDAOTest.updateDirectorTest()'><b>updateDirectorTest</b><br>Test class: Test.DirectorDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.DirectorDAOTest@3462b48a</td></tr>
+<tr>
+<td title='Test.MovieDAOTest.updateMovieTest()'><b>updateMovieTest</b><br>Test class: Test.MovieDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.MovieDAOTest@4631f1f8</td></tr>
+<tr>
+<td title='Test.OrderHistoryDAOTest.updateOrderHistoryTest()'><b>updateOrderHistoryTest</b><br>Test class: Test.OrderHistoryDAOTest</td>
+<td></td>
+<td>0</td>
+<td>Test.OrderHistoryDAOTest@1c527179</td></tr>
+</table><p>
+</body>
+</html>

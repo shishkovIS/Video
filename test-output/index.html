@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1670804089\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>8 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">37 methods,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CompanyDAOTest" hash-for-method="addClientTest">addClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="addClientTest">addClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.DirectorDAOTest" hash-for-method="addDirectorTest">addDirectorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="addMovieTest">addMovieTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="addOrderHistoryTest">addOrderHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="getAllClientsTest">getAllClientsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CompanyDAOTest" hash-for-method="getAllCompaniesTest">getAllCompaniesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CopyDAOTest" hash-for-method="getAllCopiesTest">getAllCopiesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.DirectorDAOTest" hash-for-method="getAllDirectorsTest">getAllDirectorsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getAllMoviesTest">getAllMoviesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="getAllOrderHistoryTest">getAllOrderHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="getClientByIdTest">getClientByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="getClientsByFilterNameTest">getClientsByFilterNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="getClientsByFilterTest">getClientsByFilterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CompanyDAOTest" hash-for-method="getCompanyByIdTest">getCompanyByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CopyDAOTest" hash-for-method="getCopyByMovieTest">getCopyByMovieTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.DirectorDAOTest" hash-for-method="getDirectorByIdTest">getDirectorByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMovieByIdTest">getMovieByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMoviesByFilterClientTest">getMoviesByFilterClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMoviesByFilterCompanyTest">getMoviesByFilterCompanyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMoviesByFilterDirectorTest">getMoviesByFilterDirectorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMoviesByFilterNameTest">getMoviesByFilterNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="getMoviesByFilterYearTest">getMoviesByFilterYearTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="getOrderHistoryByIdTest">getOrderHistoryByIdTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="getOrderHistoryClientTest">getOrderHistoryClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="getOrderHistoryMovieTest">getOrderHistoryMovieTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="removeClientTest">removeClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CompanyDAOTest" hash-for-method="removeCompanyTest">removeCompanyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.DirectorDAOTest" hash-for-method="removeDirectorTest">removeDirectorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="removeMovieTest">removeMovieTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="removeOrderHisoryTest">removeOrderHisoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.ClientDAOTest" hash-for-method="updateClientTest">updateClientTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CompanyDAOTest" hash-for-method="updateCompanyTest">updateCompanyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.CopyDAOTest" hash-for-method="updateCopyTest">updateCopyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.DirectorDAOTest" hash-for-method="updateDirectorTest">updateDirectorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.MovieDAOTest" hash-for-method="updateMovieTest">updateMovieTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Test.OrderHistoryDAOTest" hash-for-method="updateOrderHistoryTest">updateOrderHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.ClientDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addClientTest">
+                  </a> <!-- addClientTest -->
+                  <span class="method-name">addClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllClientsTest">
+                  </a> <!-- getAllClientsTest -->
+                  <span class="method-name">getAllClientsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClientByIdTest">
+                  </a> <!-- getClientByIdTest -->
+                  <span class="method-name">getClientByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClientsByFilterNameTest">
+                  </a> <!-- getClientsByFilterNameTest -->
+                  <span class="method-name">getClientsByFilterNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClientsByFilterTest">
+                  </a> <!-- getClientsByFilterTest -->
+                  <span class="method-name">getClientsByFilterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeClientTest">
+                  </a> <!-- removeClientTest -->
+                  <span class="method-name">removeClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateClientTest">
+                  </a> <!-- updateClientTest -->
+                  <span class="method-name">updateClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.CompanyDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addClientTest">
+                  </a> <!-- addClientTest -->
+                  <span class="method-name">addClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllCompaniesTest">
+                  </a> <!-- getAllCompaniesTest -->
+                  <span class="method-name">getAllCompaniesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCompanyByIdTest">
+                  </a> <!-- getCompanyByIdTest -->
+                  <span class="method-name">getCompanyByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeCompanyTest">
+                  </a> <!-- removeCompanyTest -->
+                  <span class="method-name">removeCompanyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateCompanyTest">
+                  </a> <!-- updateCompanyTest -->
+                  <span class="method-name">updateCompanyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.OrderHistoryDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addOrderHistoryTest">
+                  </a> <!-- addOrderHistoryTest -->
+                  <span class="method-name">addOrderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllOrderHistoryTest">
+                  </a> <!-- getAllOrderHistoryTest -->
+                  <span class="method-name">getAllOrderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOrderHistoryByIdTest">
+                  </a> <!-- getOrderHistoryByIdTest -->
+                  <span class="method-name">getOrderHistoryByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOrderHistoryClientTest">
+                  </a> <!-- getOrderHistoryClientTest -->
+                  <span class="method-name">getOrderHistoryClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getOrderHistoryMovieTest">
+                  </a> <!-- getOrderHistoryMovieTest -->
+                  <span class="method-name">getOrderHistoryMovieTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeOrderHisoryTest">
+                  </a> <!-- removeOrderHisoryTest -->
+                  <span class="method-name">removeOrderHisoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateOrderHistoryTest">
+                  </a> <!-- updateOrderHistoryTest -->
+                  <span class="method-name">updateOrderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.MovieDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMovieTest">
+                  </a> <!-- addMovieTest -->
+                  <span class="method-name">addMovieTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllMoviesTest">
+                  </a> <!-- getAllMoviesTest -->
+                  <span class="method-name">getAllMoviesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMovieByIdTest">
+                  </a> <!-- getMovieByIdTest -->
+                  <span class="method-name">getMovieByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMoviesByFilterClientTest">
+                  </a> <!-- getMoviesByFilterClientTest -->
+                  <span class="method-name">getMoviesByFilterClientTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMoviesByFilterCompanyTest">
+                  </a> <!-- getMoviesByFilterCompanyTest -->
+                  <span class="method-name">getMoviesByFilterCompanyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMoviesByFilterDirectorTest">
+                  </a> <!-- getMoviesByFilterDirectorTest -->
+                  <span class="method-name">getMoviesByFilterDirectorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMoviesByFilterNameTest">
+                  </a> <!-- getMoviesByFilterNameTest -->
+                  <span class="method-name">getMoviesByFilterNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getMoviesByFilterYearTest">
+                  </a> <!-- getMoviesByFilterYearTest -->
+                  <span class="method-name">getMoviesByFilterYearTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeMovieTest">
+                  </a> <!-- removeMovieTest -->
+                  <span class="method-name">removeMovieTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateMovieTest">
+                  </a> <!-- updateMovieTest -->
+                  <span class="method-name">updateMovieTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.CopyDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllCopiesTest">
+                  </a> <!-- getAllCopiesTest -->
+                  <span class="method-name">getAllCopiesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCopyByMovieTest">
+                  </a> <!-- getCopyByMovieTest -->
+                  <span class="method-name">getCopyByMovieTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateCopyTest">
+                  </a> <!-- updateCopyTest -->
+                  <span class="method-name">updateCopyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Test.DirectorDAOTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addDirectorTest">
+                  </a> <!-- addDirectorTest -->
+                  <span class="method-name">addDirectorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllDirectorsTest">
+                  </a> <!-- getAllDirectorsTest -->
+                  <span class="method-name">getAllDirectorsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDirectorByIdTest">
+                  </a> <!-- getDirectorByIdTest -->
+                  <span class="method-name">getDirectorByIdTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeDirectorTest">
+                  </a> <!-- removeDirectorTest -->
+                  <span class="method-name">removeDirectorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateDirectorTest">
+                  </a> <!-- updateDirectorTest -->
+                  <span class="method-name">updateDirectorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dell\AppData\Local\Temp\testng-eclipse--1670804089\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Test.OrderHistoryDAOTest&quot;/&gt;
+      &lt;class name=&quot;Test.MovieDAOTest&quot;/&gt;
+      &lt;class name=&quot;Test.CopyDAOTest&quot;/&gt;
+      &lt;class name=&quot;Test.CompanyDAOTest&quot;/&gt;
+      &lt;class name=&quot;Test.ClientDAOTest&quot;/&gt;
+      &lt;class name=&quot;Test.DirectorDAOTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">BeforeEdit</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllClientsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCompaniesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCopiesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllDirectorsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllMoviesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCompanyByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCopyByMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDirectorByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMovieByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterYearTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">ClientDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllClientsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CompanyDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCompaniesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCompanyByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">CopyDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCopiesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCopyByMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateCopyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllClientsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCompaniesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllCopiesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllDirectorsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllMoviesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getClientsByFilterTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCompanyByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getCopyByMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDirectorByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMovieByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterYearTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeOrderHisoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateCopyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DirectorDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllDirectorsTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDirectorByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">MovieDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllMoviesTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMovieByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterCompanyTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterDirectorTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterNameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getMoviesByFilterYearTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">OrderHistoryDAOTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">addOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryByIdTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryClientTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getOrderHistoryMovieTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">removeOrderHisoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateOrderHistoryTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(37);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'getAllOrderHistoryTest')
+data.setCell(0, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(0, 3, 700);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addOrderHistoryTest')
+data.setCell(1, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(1, 3, 96);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addMovieTest')
+data.setCell(2, 2, 'Test.MovieDAOTest')
+data.setCell(2, 3, 73);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addClientTest')
+data.setCell(3, 2, 'Test.ClientDAOTest')
+data.setCell(3, 3, 71);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'removeOrderHisoryTest')
+data.setCell(4, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(4, 3, 67);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'updateMovieTest')
+data.setCell(5, 2, 'Test.MovieDAOTest')
+data.setCell(5, 3, 63);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'updateCopyTest')
+data.setCell(6, 2, 'Test.CopyDAOTest')
+data.setCell(6, 3, 62);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'updateOrderHistoryTest')
+data.setCell(7, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(7, 3, 58);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'updateClientTest')
+data.setCell(8, 2, 'Test.ClientDAOTest')
+data.setCell(8, 3, 53);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'removeMovieTest')
+data.setCell(9, 2, 'Test.MovieDAOTest')
+data.setCell(9, 3, 51);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'removeClientTest')
+data.setCell(10, 2, 'Test.ClientDAOTest')
+data.setCell(10, 3, 47);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateCompanyTest')
+data.setCell(11, 2, 'Test.CompanyDAOTest')
+data.setCell(11, 3, 46);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'removeCompanyTest')
+data.setCell(12, 2, 'Test.CompanyDAOTest')
+data.setCell(12, 3, 44);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addClientTest')
+data.setCell(13, 2, 'Test.CompanyDAOTest')
+data.setCell(13, 3, 43);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'removeDirectorTest')
+data.setCell(14, 2, 'Test.DirectorDAOTest')
+data.setCell(14, 3, 38);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'getAllMoviesTest')
+data.setCell(15, 2, 'Test.MovieDAOTest')
+data.setCell(15, 3, 38);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'updateDirectorTest')
+data.setCell(16, 2, 'Test.DirectorDAOTest')
+data.setCell(16, 3, 35);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'addDirectorTest')
+data.setCell(17, 2, 'Test.DirectorDAOTest')
+data.setCell(17, 3, 35);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'getAllCopiesTest')
+data.setCell(18, 2, 'Test.CopyDAOTest')
+data.setCell(18, 3, 26);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getOrderHistoryClientTest')
+data.setCell(19, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(19, 3, 18);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'getOrderHistoryMovieTest')
+data.setCell(20, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(20, 3, 17);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'getAllClientsTest')
+data.setCell(21, 2, 'Test.ClientDAOTest')
+data.setCell(21, 3, 14);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getOrderHistoryByIdTest')
+data.setCell(22, 2, 'Test.OrderHistoryDAOTest')
+data.setCell(22, 3, 14);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'getMoviesByFilterClientTest')
+data.setCell(23, 2, 'Test.MovieDAOTest')
+data.setCell(23, 3, 12);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getMoviesByFilterYearTest')
+data.setCell(24, 2, 'Test.MovieDAOTest')
+data.setCell(24, 3, 9);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'getMoviesByFilterCompanyTest')
+data.setCell(25, 2, 'Test.MovieDAOTest')
+data.setCell(25, 3, 9);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'getMoviesByFilterDirectorTest')
+data.setCell(26, 2, 'Test.MovieDAOTest')
+data.setCell(26, 3, 9);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'getClientsByFilterTest')
+data.setCell(27, 2, 'Test.ClientDAOTest')
+data.setCell(27, 3, 8);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'getCopyByMovieTest')
+data.setCell(28, 2, 'Test.CopyDAOTest')
+data.setCell(28, 3, 7);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'getClientsByFilterNameTest')
+data.setCell(29, 2, 'Test.ClientDAOTest')
+data.setCell(29, 3, 6);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'getMovieByIdTest')
+data.setCell(30, 2, 'Test.MovieDAOTest')
+data.setCell(30, 3, 4);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getMoviesByFilterNameTest')
+data.setCell(31, 2, 'Test.MovieDAOTest')
+data.setCell(31, 3, 3);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'getClientByIdTest')
+data.setCell(32, 2, 'Test.ClientDAOTest')
+data.setCell(32, 3, 3);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'getAllDirectorsTest')
+data.setCell(33, 2, 'Test.DirectorDAOTest')
+data.setCell(33, 3, 2);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'getDirectorByIdTest')
+data.setCell(34, 2, 'Test.DirectorDAOTest')
+data.setCell(34, 3, 1);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'getAllCompaniesTest')
+data.setCell(35, 2, 'Test.CompanyDAOTest')
+data.setCell(35, 3, 1);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'getCompanyByIdTest')
+data.setCell(36, 2, 'Test.CompanyDAOTest')
+data.setCell(36, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.OrderHistoryDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllOrderHistoryTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOrderHistoryByIdTest</span>
+                <span class="method-start">701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOrderHistoryClientTest</span>
+                <span class="method-start">715 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getOrderHistoryMovieTest</span>
+                <span class="method-start">734 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.MovieDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllMoviesTest</span>
+                <span class="method-start">752 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMovieByIdTest</span>
+                <span class="method-start">791 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMoviesByFilterClientTest</span>
+                <span class="method-start">796 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMoviesByFilterCompanyTest</span>
+                <span class="method-start">809 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMoviesByFilterDirectorTest</span>
+                <span class="method-start">818 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMoviesByFilterNameTest</span>
+                <span class="method-start">828 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getMoviesByFilterYearTest</span>
+                <span class="method-start">831 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.CopyDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllCopiesTest</span>
+                <span class="method-start">841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCopyByMovieTest</span>
+                <span class="method-start">868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.CompanyDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllCompaniesTest</span>
+                <span class="method-start">875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getCompanyByIdTest</span>
+                <span class="method-start">877 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.ClientDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllClientsTest</span>
+                <span class="method-start">878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getClientByIdTest</span>
+                <span class="method-start">892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getClientsByFilterNameTest</span>
+                <span class="method-start">896 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getClientsByFilterTest</span>
+                <span class="method-start">902 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.DirectorDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getAllDirectorsTest</span>
+                <span class="method-start">910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getDirectorByIdTest</span>
+                <span class="method-start">912 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.OrderHistoryDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addOrderHistoryTest</span>
+                <span class="method-start">917 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeOrderHisoryTest</span>
+                <span class="method-start">1018 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateOrderHistoryTest</span>
+                <span class="method-start">1089 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.MovieDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addMovieTest</span>
+                <span class="method-start">1150 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeMovieTest</span>
+                <span class="method-start">1227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateMovieTest</span>
+                <span class="method-start">1282 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.CopyDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateCopyTest</span>
+                <span class="method-start">1349 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.CompanyDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addClientTest</span>
+                <span class="method-start">1413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeCompanyTest</span>
+                <span class="method-start">1460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateCompanyTest</span>
+                <span class="method-start">1508 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.ClientDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addClientTest</span>
+                <span class="method-start">1558 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeClientTest</span>
+                <span class="method-start">1631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateClientTest</span>
+                <span class="method-start">1679 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Test.DirectorDAOTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addDirectorTest</span>
+                <span class="method-start">1735 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">removeDirectorTest</span>
+                <span class="method-start">1771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateDirectorTest</span>
+                <span class="method-start">1812 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

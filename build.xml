@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name = "video" default="all">
+	<target name="setup_db">
+		<property name="db.dir" value="database" />
+		<property  name="db.url" value="jdbc:mysql://localhost:3306" />
+		<property name="db.user" value="root" />
+		<property name="db.password" value="123ilya456" />
+		<ant antfile="${db.dir}/build.xml" />
+	</target>
+	
+	<target 
+		name="all" 
+		depends="setup_db" />
+	
+	<!--
+	<path id="cp">
+		<pathelement location="WEB-INF/lib/testng-5.11-jdk15.jar"/>
+		<pathelement location="bin" />
+	</path>
+	 
+	<taskdef name="testng" classpathref="cp"
+			classname="org.testng.TestNGAntTask" />
+	 
+	<target name="test">
+		<testng classpathref="cp" groups="DAOTest">
+			<classfileset dir="bin" includes="test/*.class"/>
+		</testng>
+	</target>-->
+	
+    <property file="build.properties"/>
+
+    <property name="src.dir" value="src"/>
+    <property name="web.dir" value="war"/>
+    <property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
+    <property name="name" value="video"/>
+	<property name="deploy.path" value="."/>
+	
+	<property name="server.path" value="C:\glassfish3\glassfish\domains\domain1\autodeploy"/>
+
+    <path id="master-classpath">
+        <fileset dir="${web.dir}/WEB-INF/lib">
+            <include name="*.jar"/>
+        </fileset>
+        <pathelement path="${build.dir}"/>
+    </path>
+
+    <target name="build" description="Compile main source tree java files">
+        <mkdir dir="${build.dir}"/>
+        <javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+               deprecation="false" optimize="false" failonerror="true">
+            <src path="${src.dir}"/>
+            <classpath refid="master-classpath"/>
+        </javac>
+        <copy todir="${build.dir}" preservelastmodified="true">
+            <fileset dir="${src.dir}">
+                <include name="*.xml"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="createwar" depends="build" description="Create WAR file">
+        <war destfile="${name}.war"
+             webxml="${web.dir}/WEB-INF/web.xml">
+            <fileset dir="${web.dir}">
+                <include name="**/*.*"/>
+            </fileset>
+        </war>
+        <copy todir="${deploy.path}" preservelastmodified="true">
+            <fileset dir=".">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+	
+	<target name="deploywar" depends="createwar" description="Copy war file to autodeploy dir of server">
+		<delete file="${server.path}/${name}.war" failonerror="false"/>
+		<delete file="${server.path}/${name}.war_deployed" failonerror="false"/>
+		<copy file="${name}.war" todir="${server.path}"/>
+		<delete file="${server.path}/.autodeploystatus/${name}.war" failonerror="false"/>
+	</target>
+		
+</project>

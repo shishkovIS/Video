@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="37" passed="37">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1860" started-at="2014-05-21T09:03:27Z" finished-at="2014-05-21T09:03:28Z">
+    <groups>
+      <group name="DirectorDAOTest">
+        <method signature="DirectorDAOTest.getAllDirectorsTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getAllDirectorsTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.getDirectorByIdTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getDirectorByIdTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.addDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="addDirectorTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.removeDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="removeDirectorTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.updateDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="updateDirectorTest" class="Test.DirectorDAOTest"/>
+      </group> <!-- DirectorDAOTest -->
+      <group name="CompanyDAOTest">
+        <method signature="CompanyDAOTest.getAllCompaniesTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getAllCompaniesTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.getCompanyByIdTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getCompanyByIdTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.addClientTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="addClientTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.removeCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="removeCompanyTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.updateCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="updateCompanyTest" class="Test.CompanyDAOTest"/>
+      </group> <!-- CompanyDAOTest -->
+      <group name="ClientDAOTest">
+        <method signature="ClientDAOTest.getAllClientsTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getAllClientsTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientByIdTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientByIdTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterNameTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterNameTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.addClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="addClientTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.removeClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="removeClientTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.updateClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="updateClientTest" class="Test.ClientDAOTest"/>
+      </group> <!-- ClientDAOTest -->
+      <group name="BeforeEdit">
+        <method signature="ClientDAOTest.getAllClientsTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getAllClientsTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientByIdTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientByIdTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterNameTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterNameTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterTest" class="Test.ClientDAOTest"/>
+        <method signature="CompanyDAOTest.getAllCompaniesTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getAllCompaniesTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.getCompanyByIdTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getCompanyByIdTest" class="Test.CompanyDAOTest"/>
+        <method signature="CopyDAOTest.getAllCopiesTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getAllCopiesTest" class="Test.CopyDAOTest"/>
+        <method signature="CopyDAOTest.getCopyByMovieTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getCopyByMovieTest" class="Test.CopyDAOTest"/>
+        <method signature="DirectorDAOTest.getAllDirectorsTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getAllDirectorsTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.getDirectorByIdTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getDirectorByIdTest" class="Test.DirectorDAOTest"/>
+        <method signature="MovieDAOTest.getAllMoviesTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getAllMoviesTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMovieByIdTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMovieByIdTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterClientTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterClientTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterCompanyTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterCompanyTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterDirectorTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterDirectorTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterNameTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterNameTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterYearTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterYearTest" class="Test.MovieDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getAllOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getAllOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryByIdTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryByIdTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryClientTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryClientTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryMovieTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryMovieTest" class="Test.OrderHistoryDAOTest"/>
+      </group> <!-- BeforeEdit -->
+      <group name="DAOTest">
+        <method signature="ClientDAOTest.getAllClientsTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getAllClientsTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientByIdTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientByIdTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterNameTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterNameTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.getClientsByFilterTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterTest" class="Test.ClientDAOTest"/>
+        <method signature="CompanyDAOTest.getAllCompaniesTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getAllCompaniesTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.getCompanyByIdTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getCompanyByIdTest" class="Test.CompanyDAOTest"/>
+        <method signature="CopyDAOTest.getAllCopiesTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getAllCopiesTest" class="Test.CopyDAOTest"/>
+        <method signature="CopyDAOTest.getCopyByMovieTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getCopyByMovieTest" class="Test.CopyDAOTest"/>
+        <method signature="DirectorDAOTest.getAllDirectorsTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getAllDirectorsTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.getDirectorByIdTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getDirectorByIdTest" class="Test.DirectorDAOTest"/>
+        <method signature="MovieDAOTest.getAllMoviesTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getAllMoviesTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMovieByIdTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMovieByIdTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterClientTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterClientTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterCompanyTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterCompanyTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterDirectorTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterDirectorTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterNameTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterNameTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterYearTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterYearTest" class="Test.MovieDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getAllOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getAllOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryByIdTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryByIdTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryClientTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryClientTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryMovieTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryMovieTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="ClientDAOTest.addClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="addClientTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.removeClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="removeClientTest" class="Test.ClientDAOTest"/>
+        <method signature="ClientDAOTest.updateClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="updateClientTest" class="Test.ClientDAOTest"/>
+        <method signature="CompanyDAOTest.addClientTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="addClientTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.removeCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="removeCompanyTest" class="Test.CompanyDAOTest"/>
+        <method signature="CompanyDAOTest.updateCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="updateCompanyTest" class="Test.CompanyDAOTest"/>
+        <method signature="CopyDAOTest.updateCopyTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="updateCopyTest" class="Test.CopyDAOTest"/>
+        <method signature="DirectorDAOTest.addDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="addDirectorTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.removeDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="removeDirectorTest" class="Test.DirectorDAOTest"/>
+        <method signature="DirectorDAOTest.updateDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="updateDirectorTest" class="Test.DirectorDAOTest"/>
+        <method signature="MovieDAOTest.addMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="addMovieTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.removeMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="removeMovieTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.updateMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="updateMovieTest" class="Test.MovieDAOTest"/>
+        <method signature="OrderHistoryDAOTest.addOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="addOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.removeOrderHisoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="removeOrderHisoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.updateOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="updateOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+      </group> <!-- DAOTest -->
+      <group name="MovieDAOTest">
+        <method signature="MovieDAOTest.getAllMoviesTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getAllMoviesTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMovieByIdTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMovieByIdTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterClientTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterClientTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterCompanyTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterCompanyTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterDirectorTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterDirectorTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterNameTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterNameTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.getMoviesByFilterYearTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterYearTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.addMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="addMovieTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.removeMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="removeMovieTest" class="Test.MovieDAOTest"/>
+        <method signature="MovieDAOTest.updateMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="updateMovieTest" class="Test.MovieDAOTest"/>
+      </group> <!-- MovieDAOTest -->
+      <group name="CopyDAOTest">
+        <method signature="CopyDAOTest.getAllCopiesTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getAllCopiesTest" class="Test.CopyDAOTest"/>
+        <method signature="CopyDAOTest.getCopyByMovieTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getCopyByMovieTest" class="Test.CopyDAOTest"/>
+        <method signature="CopyDAOTest.updateCopyTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="updateCopyTest" class="Test.CopyDAOTest"/>
+      </group> <!-- CopyDAOTest -->
+      <group name="OrderHistoryDAOTest">
+        <method signature="OrderHistoryDAOTest.getAllOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getAllOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryByIdTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryByIdTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryClientTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryClientTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.getOrderHistoryMovieTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryMovieTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.addOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="addOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.removeOrderHisoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="removeOrderHisoryTest" class="Test.OrderHistoryDAOTest"/>
+        <method signature="OrderHistoryDAOTest.updateOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="updateOrderHistoryTest" class="Test.OrderHistoryDAOTest"/>
+      </group> <!-- OrderHistoryDAOTest -->
+    </groups>
+    <test name="Default test" duration-ms="1860" started-at="2014-05-21T09:03:27Z" finished-at="2014-05-21T09:03:28Z">
+      <class name="Test.MovieDAOTest">
+        <test-method status="PASS" signature="getAllMoviesTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getAllMoviesTest" duration-ms="38" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllMoviesTest -->
+        <test-method status="PASS" signature="getMovieByIdTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMovieByIdTest" duration-ms="4" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMovieByIdTest -->
+        <test-method status="PASS" signature="getMoviesByFilterClientTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterClientTest" duration-ms="12" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMoviesByFilterClientTest -->
+        <test-method status="PASS" signature="getMoviesByFilterCompanyTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterCompanyTest" duration-ms="9" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMoviesByFilterCompanyTest -->
+        <test-method status="PASS" signature="getMoviesByFilterDirectorTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterDirectorTest" duration-ms="9" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMoviesByFilterDirectorTest -->
+        <test-method status="PASS" signature="getMoviesByFilterNameTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterNameTest" duration-ms="3" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMoviesByFilterNameTest -->
+        <test-method status="PASS" signature="getMoviesByFilterYearTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="getMoviesByFilterYearTest" duration-ms="9" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMoviesByFilterYearTest -->
+        <test-method status="PASS" signature="addMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="addMovieTest" duration-ms="73" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMovieTest -->
+        <test-method status="PASS" signature="removeMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="removeMovieTest" duration-ms="51" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeMovieTest -->
+        <test-method status="PASS" signature="updateMovieTest()[pri:0, instance:Test.MovieDAOTest@4631f1f8]" name="updateMovieTest" duration-ms="63" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateMovieTest -->
+      </class> <!-- Test.MovieDAOTest -->
+      <class name="Test.CopyDAOTest">
+        <test-method status="PASS" signature="getAllCopiesTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getAllCopiesTest" duration-ms="26" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCopiesTest -->
+        <test-method status="PASS" signature="getCopyByMovieTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="getCopyByMovieTest" duration-ms="7" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCopyByMovieTest -->
+        <test-method status="PASS" signature="updateCopyTest()[pri:0, instance:Test.CopyDAOTest@7904f4c8]" name="updateCopyTest" duration-ms="62" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCopyTest -->
+      </class> <!-- Test.CopyDAOTest -->
+      <class name="Test.ClientDAOTest">
+        <test-method status="PASS" signature="getAllClientsTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getAllClientsTest" duration-ms="14" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClientsTest -->
+        <test-method status="PASS" signature="getClientByIdTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientByIdTest" duration-ms="3" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientByIdTest -->
+        <test-method status="PASS" signature="getClientsByFilterNameTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterNameTest" duration-ms="6" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientsByFilterNameTest -->
+        <test-method status="PASS" signature="getClientsByFilterTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="getClientsByFilterTest" duration-ms="8" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getClientsByFilterTest -->
+        <test-method status="PASS" signature="addClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="addClientTest" duration-ms="71" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addClientTest -->
+        <test-method status="PASS" signature="removeClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="removeClientTest" duration-ms="47" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeClientTest -->
+        <test-method status="PASS" signature="updateClientTest()[pri:0, instance:Test.ClientDAOTest@7b16b52c]" name="updateClientTest" duration-ms="53" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateClientTest -->
+      </class> <!-- Test.ClientDAOTest -->
+      <class name="Test.OrderHistoryDAOTest">
+        <test-method status="PASS" signature="getAllOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getAllOrderHistoryTest" duration-ms="700" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllOrderHistoryTest -->
+        <test-method status="PASS" signature="getOrderHistoryByIdTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryByIdTest" duration-ms="14" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistoryByIdTest -->
+        <test-method status="PASS" signature="getOrderHistoryClientTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryClientTest" duration-ms="18" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistoryClientTest -->
+        <test-method status="PASS" signature="getOrderHistoryMovieTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="getOrderHistoryMovieTest" duration-ms="17" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOrderHistoryMovieTest -->
+        <test-method status="PASS" signature="addOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="addOrderHistoryTest" duration-ms="96" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOrderHistoryTest -->
+        <test-method status="PASS" signature="removeOrderHisoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="removeOrderHisoryTest" duration-ms="67" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeOrderHisoryTest -->
+        <test-method status="PASS" signature="updateOrderHistoryTest()[pri:0, instance:Test.OrderHistoryDAOTest@1c527179]" name="updateOrderHistoryTest" duration-ms="58" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateOrderHistoryTest -->
+      </class> <!-- Test.OrderHistoryDAOTest -->
+      <class name="Test.CompanyDAOTest">
+        <test-method status="PASS" signature="getAllCompaniesTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getAllCompaniesTest" duration-ms="1" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllCompaniesTest -->
+        <test-method status="PASS" signature="getCompanyByIdTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="getCompanyByIdTest" duration-ms="0" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCompanyByIdTest -->
+        <test-method status="PASS" signature="addClientTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="addClientTest" duration-ms="43" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addClientTest -->
+        <test-method status="PASS" signature="removeCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="removeCompanyTest" duration-ms="44" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeCompanyTest -->
+        <test-method status="PASS" signature="updateCompanyTest()[pri:0, instance:Test.CompanyDAOTest@5f7777ae]" name="updateCompanyTest" duration-ms="46" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCompanyTest -->
+      </class> <!-- Test.CompanyDAOTest -->
+      <class name="Test.DirectorDAOTest">
+        <test-method status="PASS" signature="getAllDirectorsTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getAllDirectorsTest" duration-ms="2" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllDirectorsTest -->
+        <test-method status="PASS" signature="getDirectorByIdTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="getDirectorByIdTest" duration-ms="1" started-at="2014-05-21T13:03:27Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDirectorByIdTest -->
+        <test-method status="PASS" signature="addDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="addDirectorTest" duration-ms="35" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDirectorTest -->
+        <test-method status="PASS" signature="removeDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="removeDirectorTest" duration-ms="38" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeDirectorTest -->
+        <test-method status="PASS" signature="updateDirectorTest()[pri:0, instance:Test.DirectorDAOTest@3462b48a]" name="updateDirectorTest" duration-ms="35" depends-on-groups="BeforeEdit" started-at="2014-05-21T13:03:28Z" finished-at="2014-05-21T13:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateDirectorTest -->
+      </class> <!-- Test.DirectorDAOTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
